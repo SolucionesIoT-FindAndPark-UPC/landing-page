@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './public/components/page-not-found/page-n
 import { TestimonialsComponent } from './public/components/testimonials/testimonials.component';
 import { FooterComponent } from './public/components/footer/footer.component';
 import { ToolbarComponent } from './public/components/toolbar/toolbar.component';
+import { FaqComponent } from './public/components/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ToolbarComponent } from './public/components/toolbar/toolbar.component'
     PageNotFoundComponent,
     TestimonialsComponent,
     FooterComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    FaqComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
