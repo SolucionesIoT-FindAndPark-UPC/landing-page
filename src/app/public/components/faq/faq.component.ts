@@ -41,6 +41,6 @@ export class FaqComponent implements OnInit {
   ngOnInit(): void { }
 
   toggleAnswer(faq: any): void {
-    faq.isOpen = !faq.isOpen; // Toggle the open/close state
+    faq.isOpen = !faq.isOpen; 
   }
 }
