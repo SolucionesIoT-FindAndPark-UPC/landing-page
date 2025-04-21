@@ -4,13 +4,33 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { MaterialModule } from '../shared/material.module';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import {FormsModule} from "@angular/forms";
+
+import { LandingPageComponent } from './public/components/landing-page/landing-page.component';
+import { PageNotFoundComponent } from './public/components/page-not-found/page-not-found.component';
+import { TestimonialsComponent } from './public/components/testimonials/testimonials.component';
+import { FooterComponent } from './public/components/footer/footer.component';
+import { ToolbarComponent } from './public/components/toolbar/toolbar.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    HttpClientModule,
+    FormsModule,
+    RouterModule,
+    ToolbarComponent,
+    PageNotFoundComponent,
+    TestimonialsComponent,
+    FooterComponent,
+    LandingPageComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

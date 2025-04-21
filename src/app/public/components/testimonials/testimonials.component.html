@@ -1,0 +1,23 @@
+<section class="testimonials-section">
+    <h2 class="testimonials-title">Testimonials</h2>
+  
+    <div class="testimonials-container">
+      <div class="testimonial-wrapper" 
+           *ngFor="let testimonial of testimonials; let i = index"
+           [class.highlight-wrapper]="selectedIndex === i">
+        <div class="testimonial-card" 
+             [class.highlight]="selectedIndex === i"
+             (click)="selectTestimonial(i)">
+          <div class="avatar-container">
+            <img [src]="testimonial.avatar" alt="Avatar" class="testimonial-avatar">
+          </div>
+          <h3 class="testimonial-name">{{ testimonial.name }}</h3>
+          <div class="testimonial-rating">
+            <span *ngFor="let star of [1,2,3,4,5]" 
+                  [class.filled]="star <= testimonial.rating">★</span>
+          </div>
+          <p class="testimonial-content">{{ testimonial.content }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
