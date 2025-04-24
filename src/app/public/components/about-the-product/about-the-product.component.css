@@ -1,0 +1,35 @@
+.product-section {
+  padding: 3rem 2rem;
+  background-color: #f2f6fb;
+}
+
+.product-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.phone-mockup img {
+  width: 250px;
+  border-radius: 2.6rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.phone-mockup img:hover {
+  transform: scale(1.05);
+}
+
+.product-text h2 {
+  font-size: 1.8rem;
+  color: #111827;
+  font-weight: 700;
+}
+
+.product-text p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-top: 1rem;
+}

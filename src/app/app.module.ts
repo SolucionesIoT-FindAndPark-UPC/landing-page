@@ -15,6 +15,8 @@ import { TestimonialsComponent } from './public/components/testimonials/testimon
 import { FooterComponent } from './public/components/footer/footer.component';
 import { ToolbarComponent } from './public/components/toolbar/toolbar.component';
 import { FaqComponent } from './public/components/faq/faq.component';
+import {AboutTheProductComponent} from "./public/components/about-the-product/about-the-product.component";
+import {ProductFeaturesComponent} from './public/components/product-features/product-features.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { FaqComponent } from './public/components/faq/faq.component';
     TestimonialsComponent,
     FooterComponent,
     LandingPageComponent,
-    FaqComponent
+    FaqComponent,
+    AboutTheProductComponent,
+    ProductFeaturesComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
