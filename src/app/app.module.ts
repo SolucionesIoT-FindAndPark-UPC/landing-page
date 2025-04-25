@@ -18,6 +18,7 @@ import { FaqComponent } from './public/components/faq/faq.component';
 import {AboutTheProductComponent} from "./public/components/about-the-product/about-the-product.component";
 import {ProductFeaturesComponent} from './public/components/product-features/product-features.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
