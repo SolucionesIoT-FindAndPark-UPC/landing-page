@@ -5,13 +5,14 @@ import { FaqComponent } from '../faq/faq.component';
 import {AboutTheProductComponent} from '../about-the-product/about-the-product.component';
 import {ProductFeaturesComponent} from '../product-features/product-features.component';
 import { FooterComponent } from '../footer/footer.component';
+import { EndorsedByComponent } from '../endorsed-by/endorsed-by.component';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css'],
-  imports: [ToolbarComponent, TestimonialsComponent, FaqComponent, AboutTheProductComponent, ProductFeaturesComponent, FooterComponent],
+  imports: [ToolbarComponent, TestimonialsComponent, FaqComponent, AboutTheProductComponent, ProductFeaturesComponent, FooterComponent, EndorsedByComponent],
 })
 export class LandingPageComponent {
 }
