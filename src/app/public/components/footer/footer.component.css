@@ -4,6 +4,7 @@
     padding: 2rem 0;
     font-family: Arial, sans-serif;
     border-top: 1px solid #e7e7e7;
+    height: auto;
   }
   
   .footer-content {
@@ -13,6 +14,12 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+  }
+
+  .link-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: bold;
   }
   
   .footer-links {
