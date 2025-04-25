@@ -6,7 +6,25 @@
     border-top: 1px solid #e7e7e7;
     height: auto;
   }
+  .ParkUpLogo{
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
   
+  .social-logo{
+    width: 40px;
+    height: auto;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .social-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
   .footer-content {
     display: flex;
     flex-wrap: wrap;

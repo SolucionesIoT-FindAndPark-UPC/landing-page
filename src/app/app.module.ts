@@ -17,6 +17,7 @@ import { ToolbarComponent } from './public/components/toolbar/toolbar.component'
 import { FaqComponent } from './public/components/faq/faq.component';
 import {AboutTheProductComponent} from "./public/components/about-the-product/about-the-product.component";
 import {ProductFeaturesComponent} from './public/components/product-features/product-features.component';
+import { EndorsedByComponent } from './public/components/endorsed-by/endorsed-by.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import {ProductFeaturesComponent} from './public/components/product-features/pro
     LandingPageComponent,
     FaqComponent,
     AboutTheProductComponent,
-    ProductFeaturesComponent
+    ProductFeaturesComponent,
+    EndorsedByComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
