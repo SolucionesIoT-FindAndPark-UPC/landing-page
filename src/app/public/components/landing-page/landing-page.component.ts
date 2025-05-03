@@ -7,12 +7,13 @@ import {ProductFeaturesComponent} from '../product-features/product-features.com
 import { FooterComponent } from '../footer/footer.component';
 import { EndorsedByComponent } from '../endorsed-by/endorsed-by.component';
 import { Router } from '@angular/router';
+import {AboutUsComponent} from '../about-us/about-us.component';
 
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css'],
-  imports: [ToolbarComponent, TestimonialsComponent, FaqComponent, AboutTheProductComponent, ProductFeaturesComponent, FooterComponent, EndorsedByComponent],
+  imports: [AboutUsComponent, TestimonialsComponent, FaqComponent, AboutTheProductComponent, ProductFeaturesComponent, FooterComponent, EndorsedByComponent, ToolbarComponent],
 })
 export class LandingPageComponent {
 }
