@@ -18,6 +18,8 @@ import { FaqComponent } from './public/components/faq/faq.component';
 import {AboutTheProductComponent} from "./public/components/about-the-product/about-the-product.component";
 import {ProductFeaturesComponent} from './public/components/product-features/product-features.component';
 import { EndorsedByComponent } from './public/components/endorsed-by/endorsed-by.component';
+import { AboutUsComponent } from './public/components/about-us/about-us.component';
+import { ContactUsComponent } from './public/components/contact-us/contact-us.component';
 
 
 @NgModule({
@@ -40,6 +42,8 @@ import { EndorsedByComponent } from './public/components/endorsed-by/endorsed-by
     AboutTheProductComponent,
     ProductFeaturesComponent,
     EndorsedByComponent,
+    AboutUsComponent,
+    ContactUsComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
