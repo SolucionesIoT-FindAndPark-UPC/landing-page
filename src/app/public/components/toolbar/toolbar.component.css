@@ -1,3 +1,69 @@
+/* keeps everything you already had */
+.toolbar-container{
+  height:62px;
+  width:calc(100% - 10vw);
+  padding-left:10vw;
+  position:absolute;
+  z-index:5;
+}
+
+.toolbar{
+  height:62px;
+  width:100%;
+  background:rgba(217,217,217,.2);
+  display:flex;                   /* flex-container */
+  align-items:center;
+  justify-content:space-between;  /* brand on the left, menu on the right */
+  border-top:2px solid #d9d9d9;
+  border-bottom:2px solid #d9d9d9;
+  margin-top:48px;
+}
+
+/* ---------- brand (logo + word-mark) ---------- */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:16px;          /* space between logo and “ARK UP” */
+}
+
+.start {
+  padding-left: 8px;
+}
+
+.logo {
+  position: absolute;
+  left: calc(10vw - 145px);
+  top: 4px;
+  scale: 1.1;
+}
+
+/* ---------- word-mark ---------- */
+.brand h3{
+  font-size:48px;
+  font-weight:bold;
+  margin:0;          /* remove browser default */
+}
+
+.blue{ color:#3d52cb; }
+
+/* ---------- navigation links ---------- */
+.menu{
+  flex:1;                          /* menu takes the remaining width */
+  display:flex;
+  justify-content:space-evenly;    /* even gaps between items */
+  align-items:center;
+}
+
+.menu a{
+  font-size:20px;
+  opacity:.7;
+  text-decoration:none;
+  white-space:nowrap;
+}
+
+.menu .end{ padding-right:24px; }
+
+
 .hero {
   position: relative;
   height: 100vh;
@@ -29,9 +95,16 @@
   font-size: 24px;
   font-weight: bold;
   background-color: #3F89C2;
-  padding: 28px 42px 28px 42px;
+  padding: 27px 42px 27px 42px;
   border-radius: 18px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4a8dc1;
+  transform: translateY(-4px);
 }
 
 h1 {
