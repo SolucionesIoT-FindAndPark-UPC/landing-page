@@ -59,7 +59,9 @@
   opacity:.7;
   text-decoration:none;
   white-space:nowrap;
+  cursor: pointer;
 }
+
 
 .menu .end{ padding-right:24px; }
 
