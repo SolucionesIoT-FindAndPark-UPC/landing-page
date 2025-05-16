@@ -23,9 +23,11 @@
 }
 
 .product-text h2 {
-  font-size: 1.8rem;
-  color: #111827;
-  font-weight: 700;
+  font-size: 48px;
+  font-weight: bold;
+  color: #0A0A0A;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .product-text p {
