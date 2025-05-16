@@ -7,7 +7,7 @@
   z-index:5;
 }
 
-.toolbar{
+.toolbar {
   height:62px;
   width:100%;
   background:rgba(217,217,217,.2);
@@ -104,8 +104,28 @@
   transition: transform 0.3s ease;
 }
 
+.no-deco {
+  text-decoration: none;
+}
+
+.button2 {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #4ac18b;
+  padding: 27px 42px 27px 42px;
+  border-radius: 18px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
 .button:hover {
   background-color: #4a8dc1;
+  transform: translateY(-4px);
+}
+
+.button2:hover {
+  background-color: #63daa4;
   transform: translateY(-4px);
 }
 
@@ -146,4 +166,136 @@ h2 {
 .hero > * {
   position: relative;
   z-index: 2;
+}
+
+.mini-menu {
+  display: none;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  overflow: hidden;
+  transition: width 0.3s cubic-bezier(.3,.7,.4,1);
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  pointer-events: none;
+}
+
+.side-menu.open {
+  width: 100vw;
+  pointer-events: auto;
+}
+
+.side-menu-content {
+  background: #222;
+  width: 70vw;
+  max-width: 320px;
+  height: 100vh;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  box-shadow: -4px 0 24px rgba(0,0,0,0.3);
+}
+
+.side-menu-content a {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  opacity: 0.85;
+  font-weight: 600;
+  padding: 12px 0;
+  transition: opacity 0.2s;
+}
+
+.side-menu-content a:hover {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1025px) {
+  .side-menu { display: none; }
+}
+
+
+@media screen and (max-width: 1760px) {
+  .button {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button2 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .call-to-action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px; /* adjust as needed */
+    justify-content: flex-start; /* or center */
+  }
+  .call-to-action > * {
+    flex: 1 1 47%; /* 2 per row, with some gap */
+    min-width: 200px; /* optional, ensures buttons don’t get too small */
+    box-sizing: border-box;
+  }
+  .hero {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding-right: 10vw;
+    padding-left: 5vw;
+  }
+  .toolbar-container {
+    width:calc(100% - 19vw);
+    padding-left: 19vw;
+  }
+  .logo {
+    left: calc(19vw - 145px);
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .menu {
+    display: none;
+  }
+  .mini-menu {
+    display: block;
+    padding-right: 36px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .toolbar-container {
+    width:calc(100% - 20vw);
+    padding-left: 20vw;
+  }
+  .logo {
+    left: calc(20vw - 145px);
+  }
+  .button {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .hero {
+    padding-top: 50px;
+  }
 }

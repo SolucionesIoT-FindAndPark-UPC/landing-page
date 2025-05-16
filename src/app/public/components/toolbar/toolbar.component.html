@@ -6,12 +6,23 @@
     </div>
 
     <nav class="menu">
-      <a>Home</a>
-      <a>About Us</a>
-      <a>Our Product</a>
-      <a>F&A</a>
-      <a class="end">Contact Us</a>
+      <a href="#home">Home</a>
+      <a href="#aboutUs">About Us</a>
+      <a href="#ourProduct">Our Product</a>
+      <a href="#faq">F&A</a>
+      <a href="#contactUs" class="end">Contact Us</a>
     </nav>
+    <fa-icon class="mini-menu" size="2x" [icon]="faBars" (click)="openSideMenu()"></fa-icon>
+  </div>
+</div>
+
+<div class="side-menu" [class.open]="sideMenuOpen" (click)="closeSideMenu()">
+  <div class="side-menu-content" (click)="$event.stopPropagation()">
+    <a href="#home" (click)="closeSideMenu()">Home</a>
+    <a href="#aboutUs" (click)="closeSideMenu()">About Us</a>
+    <a href="#ourProduct" (click)="closeSideMenu()">Our Product</a>
+    <a href="#faq" (click)="closeSideMenu()">F&A</a>
+    <a href="#contactUs" (click)="closeSideMenu()">Contact Us</a>
   </div>
 </div>
 
@@ -26,5 +37,8 @@
   <div class="call-to-action">
     <div class="button">Download for iOS</div>
     <div class="button">Download for Android</div>
+    <a href="https://parkup-webapp.netlify.app/" target="_blank" class="no-deco">
+      <div class="button2">Go to Web App</div>
+    </a>
   </div>
 </div>
