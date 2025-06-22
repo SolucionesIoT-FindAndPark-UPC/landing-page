@@ -130,11 +130,11 @@
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-style: italic;
   font-weight: bold;
 }
@@ -240,16 +240,21 @@ h2 {
   .call-to-action {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px; /* adjust as needed */
+    gap: 16px; /* adjust as needed */
     justify-content: flex-start; /* or center */
   }
   .call-to-action > * {
-    flex: 1 1 47%; /* 2 per row, with some gap */
-    min-width: 200px; /* optional, ensures buttons don’t get too small */
+    flex: 1 1 calc(33.333% - 2%);
     box-sizing: border-box;
   }
   .hero {
     padding-top: 50px;
+  }
+}
+
+@media screen and (max-height: 1024px) {
+  .hero {
+    gap: 48px;
   }
 }
 
@@ -266,10 +271,10 @@ h2 {
     left: calc(19vw - 145px);
   }
   h1 {
-    font-size: 48px;
+    font-size: 28px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 18px;
   }
   .menu {
     display: none;
